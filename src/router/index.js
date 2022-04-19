@@ -27,6 +27,16 @@ const routes = [
     component: () => import(/* webpackChunkName: "dropdowns" */ '../views/Dropdowns.vue')
   },
   {
+    path: '/footers',
+    name: 'Footers',
+    component: () => import(/* webpackChunkName: "footers" */ '../views/Footers.vue')
+  },
+  {
+    path: '/headers',
+    name: 'Headers',
+    component: () => import(/* webpackChunkName: "headers" */ '../views/Headers.vue')
+  },
+  {
     path: '/inputs',
     name: 'Inputs',
     component: () => import(/* webpackChunkName: "inputs" */ '../views/Inputs.vue')

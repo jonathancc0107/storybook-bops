@@ -11,6 +11,10 @@
         <v-divider class="mx-5" vertical></v-divider>
         <router-link class="nav-link" to='/dropdowns'>Dropdowns</router-link>
         <v-divider class="mx-5" vertical></v-divider>
+        <router-link class="nav-link" to='/footers'>Footers</router-link>
+        <v-divider class="mx-5" vertical></v-divider>
+        <router-link class="nav-link" to='/headers'>Headers</router-link>
+        <v-divider class="mx-5" vertical></v-divider>
         <router-link class="nav-link" to='/inputs'>Inputs</router-link>
         <v-divider class="mx-5" vertical></v-divider>
         <router-link class="nav-link" to='/lists'>Lists</router-link>

@@ -181,6 +181,10 @@
           </v-col>
           <v-col cols="12">
             <v-row align="center" justify="center">
+
+              <OutlinedButton text="Importado" color="indigo"/>
+              <OutlinedButtonIcon icon="mdi-pencil" color="indigo"/>
+
               <v-btn class="ma-2" outlined color="indigo">
                 Outlined Button
               </v-btn>
@@ -337,8 +341,14 @@
 </template>
 
 <script>
+  import OutlinedButton from '@/components/Buttons/OutlinedButton.vue'
+  import OutlinedButtonIcon from '@/components/Buttons/OutlinedButtonIcon.vue'
   export default {
     name: "Buttons",
+    components: {
+      OutlinedButton,
+      OutlinedButtonIcon,
+    },
     data() {
       return {
         loader: null,

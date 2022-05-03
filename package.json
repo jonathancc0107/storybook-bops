@@ -1,17 +1,22 @@
 {
   "name": "bops-ui-test",
-  "version": "0.1.1",
+  "version": "0.1.5",
   "private": false,
   "author": "Jonathan Caballero <jonathan.caballero@bopsgroup.com>",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "build-library": "vue-cli-service build --target lib --name bops-ui-test ./src/install.js",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "test-var": "echo %npm_execpath%"
   },
-  "main": ".dist/bops-ui-test.umd.js",
+  "main": "dist/bops-ui-test.common.js",
+  "module": "dist/bops-ui-test.umd.min.js",
+  "unpkg": "dist/bops-ui-test.umd.min.js",
+  "jsdelivr": "dist/bops-ui-test.umd.min.js",
   "files": [
-    "dist"
+    "dist/*",
+    "src/*"
   ],
   "dependencies": {
     "core-js": "^3.6.5",
@@ -30,7 +35,7 @@
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
     "sass": "~1.32.0",
-    "sass-loader": "^10.0.0",
+    "sass-loader": "^10.2.1",
     "vue-cli-plugin-vuetify": "~2.4.8",
     "vue-template-compiler": "^2.6.11",
     "vuetify-loader": "^1.7.0"
@@ -43,7 +48,7 @@
   "keywords": [
     "ui"
   ],
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/jonathancc0107/storybook-bops/issues"
   },

@@ -1,15 +1,17 @@
-import OutlinedButton from '@/components/Buttons/OutlinedButton.vue'
-import OutlinedButtonIcon from '@/components/Buttons/OutlinedButtonIcon.vue'
+import * as components from './components'
 
-const OutlinedButtonSimple = {
+const ComponentLibrary = {
     install(Vue) {
-        Vue.component("outlined-button", OutlinedButton)
-        Vue.component("outlined-button-icon", OutlinedButtonIcon)
+        for (const componentName in components) {
+            const component = components[componentName]
+
+            Vue.component(component.name, component)
+        }
     }
 }
 
-if (typeof window !== 'undefined' && window.Vue) {
-    window.Vue.use(OutlinedButtonSimple);
-}
+export default ComponentLibrary;
 
-export default OutlinedButtonSimple;
+if (typeof window !== 'undefined' && window.Vue) {
+    window.Vue.use(ComponentLibrary);
+} 

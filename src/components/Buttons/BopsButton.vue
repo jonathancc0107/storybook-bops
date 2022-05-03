@@ -7,14 +7,14 @@
     :disabled="disabled" 
     :color="color"
     :dark="dark"
-    :x-small="xmall"
+    :x-small="xsmall"
     :small="small"
     :large="large"
     :x-large="xlarge"
     :plain="plain"
     :rounded="rounded"
     :tile="tile"
-    :text="text"
+    :text="textB"
     :raised="raised">
     {{ text }}
   </v-btn>
@@ -39,7 +39,7 @@ export default {
     plain    : Boolean,
     rounded  : Boolean,
     tile     : Boolean,
-    text     : Boolean,
+    textB    : Boolean,
     raised   : Boolean,
   }
 };

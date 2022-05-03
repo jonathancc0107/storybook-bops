@@ -7,7 +7,7 @@
     :disabled="disabled" 
     :color="color"
     :dark="dark"
-    :x-small="xmall"
+    :x-small="xsmall"
     :small="small"
     :large="large"
     :x-large="xlarge"
@@ -25,7 +25,6 @@
 export default {
   name: 'BopsButtonIcon',
   props: {
-    text     : String,
     color    : String,
     icon_text: String,
     icon     : Boolean,

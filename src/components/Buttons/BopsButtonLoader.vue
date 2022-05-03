@@ -4,7 +4,7 @@
     :outlined="outlined"
     :depressed="depressed"
     :fab="fab"
-    :disabled="disabled" 
+    :disabled="loading" 
     :color="color"
     :dark="dark"
     :x-small="xsmall"
@@ -16,31 +16,22 @@
     :tile="tile"
     :text="textB"
     :raised="raised"
-    :icon="icon">
+    :loading="loading">
     {{ text }}
-    <v-icon
-      :right="rigth"
-      :left="left">
-      {{ icon_text }}
-    </v-icon>
   </v-btn>
 </template>
 
 <script>
 export default {
-  name: 'BopsButtonIcon',
+  name: 'BopsButtonLoader',
   props: {
-    color    : String,
     text     : String,
-    icon_text: String,
-    icon     : Boolean,
-    right    : Boolean,
-    left     : Boolean,
+    color    : String,
     outlined : Boolean,
     block    : Boolean,
     depressed: Boolean,
     fab      : Boolean,
-    disabled : Boolean,
+    loading  : Boolean,
     dark     : Boolean,
     xsmall   : Boolean,
     small    : Boolean,

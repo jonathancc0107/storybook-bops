@@ -1,5 +1,6 @@
 <template>
-  <v-btn 
+  <v-btn
+    :class="classes" 
     :block="block" 
     :outlined="outlined"
     :depressed="depressed"
@@ -14,9 +15,12 @@
     :plain="plain"
     :rounded="rounded"
     :tile="tile"
-    :text="textB"
-    :raised="raised">
-    {{ text }}
+    :text="text"
+    :raised="raised"
+    :icon="icon"
+    :loading="loading"
+    @click="handleClick">
+      <slot></slot>
   </v-btn>
 </template>
 
@@ -24,7 +28,7 @@
 export default {
   name: 'BopsButton',
   props: {
-    text     : String,
+    classes  : String,
     color    : String,
     outlined : Boolean,
     block    : Boolean,
@@ -39,8 +43,15 @@ export default {
     plain    : Boolean,
     rounded  : Boolean,
     tile     : Boolean,
-    textB    : Boolean,
+    text     : Boolean,
     raised   : Boolean,
+    icon     : Boolean,
+    loading  : Boolean,
+  },
+  methods: {
+    handleClick() {
+      this.$emit("click")
+    }
   }
 };
 </script>

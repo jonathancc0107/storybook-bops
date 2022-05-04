@@ -182,9 +182,6 @@
           <v-col cols="12">
             <v-row align="center" justify="center">
 
-              <BopsButton :outlined="true" text="Importado" color="indigo"/>
-              <BopsButtonIcon :fab="true" :outlined="true" icon_text="mdi-pencil" color="indigo"/>
-
               <v-btn class="ma-2" outlined color="indigo">
                 Outlined Button
               </v-btn>
@@ -341,14 +338,8 @@
 </template>
 
 <script>
-  import BopsButton from '@/components/Buttons/BopsButton.vue'
-  import BopsButtonIcon from '@/components/Buttons/BopsButtonIcon.vue'
   export default {
     name: "Buttons",
-    components: {
-      BopsButton,
-      BopsButtonIcon,
-    },
     data() {
       return {
         loader: null,

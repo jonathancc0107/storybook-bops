@@ -1,6 +1,6 @@
 {
   "name": "bops-ui-test",
-  "version": "0.1.5",
+  "version": "0.1.7",
   "private": false,
   "author": "Jonathan Caballero <jonathan.caballero@bopsgroup.com>",
   "scripts": {

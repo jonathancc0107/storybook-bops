@@ -188,7 +188,7 @@
                   offset-y max-width="290px" min-width="auto">
                   <template v-slot:activator="{ on, attrs }">
                     <v-text-field v-model="dateFormatted" label="Date" hint="MM/DD/YYYY format" persistent-hint
-                      prepend-icon="mdi-calendar" v-bind="attrs" @blur="date3 = parseDate(dateFormatted)" v-on="on">
+                      append-icon="mdi-calendar" v-bind="attrs" @blur="date3 = parseDate(dateFormatted)" v-on="on">
                     </v-text-field>
                   </template>
                   <v-date-picker v-model="date3" no-title @input="menu5 = false"></v-date-picker>

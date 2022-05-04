@@ -1,3 +1,4 @@
 import BopsTextField from './BopsTextField.vue'
+import BopsSelect from './BopsSelect.vue'
 
-export { BopsTextField }
+export { BopsTextField, BopsSelect }

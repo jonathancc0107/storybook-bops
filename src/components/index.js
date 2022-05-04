@@ -1,2 +1,2 @@
-export { BopsButton, BopsButtonIcon, BopsButtonLoader } from './Buttons'
-export { BopsTextField } from './Inputs'
+export { BopsButton, BopsBadge } from './Buttons'
+// export { BopsTextField, BopsSelect } from './Inputs'

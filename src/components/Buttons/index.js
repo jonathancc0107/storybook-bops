@@ -1,5 +1,4 @@
 import BopsButton from './BopsButton.vue'
-import BopsButtonIcon from './BopsButtonIcon.vue'
-import BopsButtonLoader from './BopsButtonLoader.vue'
+import BopsBadge from './BopsBadge.vue'
 
-export { BopsButton, BopsButtonIcon, BopsButtonLoader }
+export { BopsButton, BopsBadge }
